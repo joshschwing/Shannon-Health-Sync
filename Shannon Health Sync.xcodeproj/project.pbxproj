@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D53010252AC8D06B008130C2 /* Shannon_Health_SyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53010242AC8D06B008130C2 /* Shannon_Health_SyncApp.swift */; };
+		D525ABCA2ADC71C200FA9390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D525ABC92ADC71C100FA9390 /* GoogleService-Info.plist */; };
+		D525ABCD2ADC721E00FA9390 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D525ABCC2ADC721E00FA9390 /* FirebaseAuth */; };
+		D525ABCF2ADC721E00FA9390 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D525ABCE2ADC721E00FA9390 /* FirebaseFirestore */; };
 		D53010272AC8D06B008130C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53010262AC8D06B008130C2 /* ContentView.swift */; };
 		D53010292AC8D06D008130C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53010282AC8D06D008130C2 /* Assets.xcassets */; };
 		D530102C2AC8D06D008130C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D530102B2AC8D06D008130C2 /* Preview Assets.xcassets */; };
+		D5755C0F2AD367A90045340C /* Shannon_Health_SyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5755C0E2AD367A90045340C /* Shannon_Health_SyncApp.swift */; };
+		D5E587872ADCD868007BCA83 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E587862ADCD868007BCA83 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D525ABC92ADC71C100FA9390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D53010212AC8D06B008130C2 /* Shannon Health Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shannon Health Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D53010242AC8D06B008130C2 /* Shannon_Health_SyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shannon_Health_SyncApp.swift; sourceTree = "<group>"; };
 		D53010262AC8D06B008130C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D53010282AC8D06D008130C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D530102B2AC8D06D008130C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5755C0E2AD367A90045340C /* Shannon_Health_SyncApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shannon_Health_SyncApp.swift; sourceTree = "<group>"; };
+		D5E587862ADCD868007BCA83 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D525ABCD2ADC721E00FA9390 /* FirebaseAuth in Frameworks */,
+				D525ABCF2ADC721E00FA9390 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +59,11 @@
 		D53010232AC8D06B008130C2 /* Shannon Health Sync */ = {
 			isa = PBXGroup;
 			children = (
-				D53010242AC8D06B008130C2 /* Shannon_Health_SyncApp.swift */,
+				D5755C0E2AD367A90045340C /* Shannon_Health_SyncApp.swift */,
 				D53010262AC8D06B008130C2 /* ContentView.swift */,
+				D5E587862ADCD868007BCA83 /* ListView.swift */,
 				D53010282AC8D06D008130C2 /* Assets.xcassets */,
+				D525ABC92ADC71C100FA9390 /* GoogleService-Info.plist */,
 				D530102A2AC8D06D008130C2 /* Preview Content */,
 			);
 			path = "Shannon Health Sync";
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = "Shannon Health Sync";
+			packageProductDependencies = (
+				D525ABCC2ADC721E00FA9390 /* FirebaseAuth */,
+				D525ABCE2ADC721E00FA9390 /* FirebaseFirestore */,
+			);
 			productName = "Shannon Health Sync";
 			productReference = D53010212AC8D06B008130C2 /* Shannon Health Sync.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D53010182AC8D06B008130C2;
+			packageReferences = (
+				D525ABCB2ADC721E00FA9390 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D53010222AC8D06B008130C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +144,7 @@
 			files = (
 				D530102C2AC8D06D008130C2 /* Preview Assets.xcassets in Resources */,
 				D53010292AC8D06D008130C2 /* Assets.xcassets in Resources */,
+				D525ABCA2ADC71C200FA9390 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5755C0F2AD367A90045340C /* Shannon_Health_SyncApp.swift in Sources */,
 				D53010272AC8D06B008130C2 /* ContentView.swift in Sources */,
-				D53010252AC8D06B008130C2 /* Shannon_Health_SyncApp.swift in Sources */,
+				D5E587872ADCD868007BCA83 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +356,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D525ABCB2ADC721E00FA9390 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D525ABCC2ADC721E00FA9390 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D525ABCB2ADC721E00FA9390 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D525ABCE2ADC721E00FA9390 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D525ABCB2ADC721E00FA9390 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D53010192AC8D06B008130C2 /* Project object */;
 }
